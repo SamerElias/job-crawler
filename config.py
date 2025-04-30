@@ -1,13 +1,14 @@
 # config.py
 
-BASE_URL = "https://www.theknot.com/marketplace/wedding-reception-venues-atlanta-ga"
-CSS_SELECTOR = "[class^='info-container']"
+# Use the job search directly from jobs.careers.microsoft.com
+BASE_URL = "https://jobs.careers.microsoft.com/global/en/search"
+CSS_SELECTOR = ".job-card"
 REQUIRED_KEYS = [
-    "name",
-    "price",
+    "title",
+    "company",
     "location",
-    "capacity",
-    "rating",
-    "reviews",
+    "job_type",
+    "posted_date",
     "description",
+    "url",
 ]
